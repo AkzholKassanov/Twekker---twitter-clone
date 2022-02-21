@@ -1,0 +1,27 @@
+{% extends 'basepage.html' %}
+{% block content %}
+Welcome to Twekker, Yeah !
+<div id = 'tweets'>
+  Loading...
+</div>
+
+<script>
+const tweetsElement = document.getElementById("tweets")
+//tweetsElement.innerHTML = 'loading...'
+
+const xhr = new XMLHttpRequest()
+const method = "GET"
+const url = "/tweets"
+const responseType = 'json'
+
+xhr.responseType = responseType
+xhr.open(method, url)
+xhr.onload = function(){
+  const serverResponce = xhr.response
+  var listedItems  = serverResponce.response
+  console.log(listedItems)
+
+}
+xhr.send()
+</script>
+{% endblock content %}
