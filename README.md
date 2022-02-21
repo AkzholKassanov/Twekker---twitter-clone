@@ -2,7 +2,7 @@
 
 Creating twitter clone by python django & js
 1:19:00
-
+'''
 1. Users
   -> register
   -> login
@@ -27,3 +27,4 @@ Long term toools:
 -> direct mssg
 -> hashtags
 ->
+'''
